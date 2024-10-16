@@ -31,11 +31,28 @@ const foodObj = {
             "https://akispetretzikis.com/recipe/608/gemista"
           ]
         },
-    day4: ["Κοτόπουλο με γλυκόξινη (κατσαρόλα)", "Κοτόπουλο με σόγια και πιπεριες στο φούρνο"],
-    day5: ["Θα φάμε έξω!"],
+    day4: {food:
+      [
+      "Κοτόπουλο με γλυκόξινη (κατσαρόλα)", 
+      "Κοτόπουλο με σόγια και πιπεριες στο φούρνο"],
+      links: [
+        "https://www.facebook.com/FOODbible/videos/255496497319691/?rdid=xkvO10Q8QKzBMmI6",
+        "#"
+        
+      ]
+    },
+    day5: 
+    {food:
+      ["Θα φάμε έξω!", "Παστίτσιο"],
+
+      links:[
+        "#",
+        "https://www.argiro.gr/recipe/mpesamel-me-korn-flaour/"
+      ]
+    },
     day6: ["Μακαρονοσαλάτα", "Ομελέτα"],
      //sunday
-    day0: ["Σολομός και γλυκόξινη", "Τσιπούρες στο φούρνο"],
+    day0: ["Σολομός και γλυκόξινη", "Τσιπούρες στο φούρνο", "Γαρίδες"],
     
     
   };
@@ -46,10 +63,10 @@ var foodPara = document.querySelectorAll(".food>p")[0];
 
 
 const d = new Date();
-const day = d.getDay();
+const day = 0;
 var days = ['Κυριακή', 'Δευτέρα', 'Τρίτη', 'Τετάρτη', 'Πέμπτη', 'Παρασκευή', 'Σάββατο'];
 //var ranNum = Math.floor(Math.random()*foodObj[`day${day}`].food.length);
-var dayName = days[d.getDay()];
+var dayName = days[0];
 
 // Generate random number based on the length of `food` or the day array
 var ranNum;
