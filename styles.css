@@ -32,7 +32,7 @@
   
   h1 {
     align-self: center;
-    font-family: 'Lobster', cursive;
+    font-family: 'Lobster', cursive, Arial, sans-serif;
     text-shadow: 5px 0 #232931;
     font-size: 8rem;
     color: #4ECCA3;
@@ -63,5 +63,9 @@
   @media (min-width:320px) {
     footer{
         font-size:0.7rem;
+    }
+
+    body{
+        font-family: Arial, sans-serif;
     }
   }
