@@ -1,12 +1,12 @@
 .container {
-    width: 70%;
+    height: 100vh;
     margin: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    
+    /* column-gap: 20px; */
   }
   /* 
   .containerOut{
@@ -20,16 +20,7 @@
     align-items: center;
   } */
   
-  .dice {
-    text-align: center;
-    display: inline-block;
-  
-  }
-  
-  i {
-    align-self: flex-end;
-    
-  }
+ 
   
   .hidden{
     visibility: hidden;
