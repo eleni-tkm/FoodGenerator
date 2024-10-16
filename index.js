@@ -72,8 +72,8 @@ if (dayData && dayData.food) {
   foodToday = dayData[ranNum];
 }
 var title = document.getElementsByTagName("h2")[0];
-title.innerHTML += `Σήμερα είναι ${dayName}, μαγειρεύουμε : `;
-foodPara.innerHTML += foodToday;
+title.innerHTML = `Σήμερα είναι ${dayName}, μαγειρεύουμε : `;
+foodPara.innerHTML = foodToday;
 
 var image1 = document.querySelector(".img1");
 var imagePath = `./assets/img${day}_${ranNum}.png`;
