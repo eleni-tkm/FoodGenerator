@@ -63,10 +63,10 @@ var foodPara = document.querySelectorAll(".food>p")[0];
 
 
 const d = new Date();
-const day = 0;
+const day = d.getDay();
 var days = ['Κυριακή', 'Δευτέρα', 'Τρίτη', 'Τετάρτη', 'Πέμπτη', 'Παρασκευή', 'Σάββατο'];
 //var ranNum = Math.floor(Math.random()*foodObj[`day${day}`].food.length);
-var dayName = days[0];
+var dayName = days[d.getDay()];
 
 // Generate random number based on the length of `food` or the day array
 var ranNum;
